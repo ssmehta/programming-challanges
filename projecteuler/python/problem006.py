@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 """
 Problem 006:
@@ -21,7 +21,7 @@ N = 100
 
 # Simplified from:
 # (\Sigma_{i = 1}^n i)^2 - \Sigma_{i = 1}^n i^2 = [(n / 2)(n + 1)]^2 - (n / 6)(n + 1)(2n + 1)
-f = lambda n : (n * (n - 1) * (n + 1) * (3 * n + 2)) // 12
+f = lambda n: (n * (n - 1) * (n + 1) * (3 * n + 2)) // 12
 
 # Alternatively, since N is small
 print(sum(range(1, N + 1))**2 - sum(map(lambda n : n * n, range(1, N + 1))))
