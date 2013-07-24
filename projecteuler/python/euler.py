@@ -112,7 +112,7 @@ def sigma(n):
         sigma(p^n * q^m) = sigma(p^n) * sigma(q^m)
     """
     
-    return reduce(op.mul, [(k**(v + 1) - 1) / (k - 1) for k, v in get_prime_factors(n).items()], 1)
+    return reduce(op.mul, [(k**(v + 1) - 1) // (k - 1) for k, v in get_prime_factors(n).items()], 1)
 
 
 def phi(n):
