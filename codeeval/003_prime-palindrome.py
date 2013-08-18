@@ -18,7 +18,7 @@ Your program should print the largest palindrome on stdout. i.e.
     929
 """
 
-import math, sys
+import math
 
 
 N = 1000

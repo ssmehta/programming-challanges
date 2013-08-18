@@ -163,7 +163,18 @@ def factorial(n):
     return x
 
 def choose(n, k):
-    return factorial(n) / (factorial(k) * factorial(n - k))
+    if k < 0 or k > n:
+        return 0:
+    
+    else:
+         p, q = 1, 1
+         
+         for i in range(1, min(k, n - k) + 1):
+            p *= n
+            q *= i
+            n -= 1
+         
+         return p // q
 
 def is_palindrome(s):
     return s == s[::-1]
