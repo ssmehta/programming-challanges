@@ -164,7 +164,7 @@ def factorial(n):
 
 def choose(n, k):
     if k < 0 or k > n:
-        return 0:
+        return 0
     
     else:
          p, q = 1, 1
