@@ -37,6 +37,6 @@ So remove 1st and 4th billboards giving a configuration _ 2 3 _ 6 10 having a pr
 
 ### Constraints:
 
-* 1 <= N <= 100,000(10^5)
+* 1 <= N <= 10<sup>5</sup>
 * 1 <= K <= N
-* 0 <= profit value of any billboard <= 2,000,000,000(2*10^9)
+* 0 <= profit value of any billboard <= 2 * 10<sup>9</sup>

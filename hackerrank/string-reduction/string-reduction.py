@@ -8,7 +8,7 @@ char_set = 'abc'
 if __name__ == '__main__':
     T = int(sys.stdin.readline())
     
-    for i in range(T):
+    for _ in range(T):
         chars = sys.stdin.readline().lower().strip()
         count = collections.Counter(chars)
         

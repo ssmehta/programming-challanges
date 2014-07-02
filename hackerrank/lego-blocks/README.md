@@ -16,7 +16,7 @@ Output T lines, one for each test case containing the number of ways to build th
 ### Constraints:
 
 * 1 <= T <= 100
-* 1 <= N,M <= 1000
+* 1 <= N, M <= 1000
 
 ### Sample Input:
 

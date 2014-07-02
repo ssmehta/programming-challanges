@@ -8,7 +8,7 @@ if __name__ == '__main__':
     words = ' '.join(sys.stdin.readline().strip() for i in range(N))
     T = int(sys.stdin.readline())
     
-    for i in range(T):
+    for _ in range(T):
         t_us = sys.stdin.readline().strip()
         t_uk = t_us[::-1].replace('z', 's', 1)[::-1]
         

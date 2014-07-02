@@ -33,7 +33,7 @@ def inversion_count(ar):
 if __name__ == '__main__':
     T = int(sys.stdin.readline())
     
-    for i in range(T):
+    for _ in range(T):
         N = int(sys.stdin.readline())
         ar = list(map(int, sys.stdin.readline().split()))
         print(inversion_count(ar))

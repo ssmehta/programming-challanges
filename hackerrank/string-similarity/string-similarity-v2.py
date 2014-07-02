@@ -35,5 +35,5 @@ def string_similarity(s):
 if __name__ == '__main__':
     T = int(sys.stdin.readline())
     
-    for i in range(T):
+    for _ in range(T):
         print(string_similarity(sys.stdin.readline().strip()))

@@ -29,7 +29,7 @@ Output T lines, one for each test case containing the smallest length of the res
     1
     5
 
-# Explanation:
+### Explanation:
 
 For the first case, you can either get cab -> cc or cab -> bb, resulting in a string of length 2.
 

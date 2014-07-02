@@ -41,7 +41,7 @@ i think hackerrank is a great place to hangout
     0
     -1
 
-# Explanation:
+### Explanation:
 
 The first conversation ends with hackerrank and hence 2
 

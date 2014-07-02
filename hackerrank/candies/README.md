@@ -28,4 +28,4 @@ The number of candies Alice must give are 1, 2 and 1.
 
 ### Constraints:
 
-N and the rating  of each child are no larger than 10^5.
+N and the rating of each child are no larger than 10<sup>5</sup>.

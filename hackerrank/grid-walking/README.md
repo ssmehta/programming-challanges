@@ -1,11 +1,11 @@
 Grid Walking
 ============
 
-You are situated in an N dimensional grid at position(x_1, x_2, ..., x_N). The dimensions of the grid are (D_1, D_2, ..., D_N). In one step, you can walk one step ahead or behind in any one of the N dimensions. (So there are always 2N possible different moves). In how many ways can you take M steps such that you do not leave the grid at any point ? You leave the grid if you for any x_i, either x_i <= 0 or x_i > D_i.
+You are situated in an N dimensional grid at position(x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>N</sub>). The dimensions of the grid are (D<sub>1</sub>, D_<sub>2</sub>, ..., D<sub>N</sub>). In one step, you can walk one step ahead or behind in any one of the N dimensions. (So there are always 2N possible different moves). In how many ways can you take M steps such that you do not leave the grid at any point? You leave the grid if you for any x<sub>i</sub>, either x<sub>i</sub> <= 0 or x<sub>i</sub> D<sub>i</sub>.
 
 ### Input:
 
-The first line contains the number of test cases T. T test cases follow. For each test case, the first line contains N and M, the second line contains x_1, x_2, ..., x_N and the 3rd line contains D_1,D_2,…,D_N.
+The first line contains the number of test cases T. T test cases follow. For each test case, the first line contains N and M, the second line contains x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>N</sub> and the 3rd line contains D<sub>1</sub>,D<sub>2</sub>, ...,D<sub>N</sub>.
 
 ### Output:
 
@@ -16,8 +16,8 @@ Output T lines, one corresponding to each test case. Since the answer can be rea
 * 1 <= T <= 10
 * 1 <= N <= 10
 * 1 <= M <= 300
-* 1 <= D_i <= 100
-* 1 <= x_i <= D_i
+* 1 <= D<sub>i</sub> <= 100
+* 1 <= x<sub>i</sub> <= D<sub>i</sub>
 
 ### Sample Input:
 

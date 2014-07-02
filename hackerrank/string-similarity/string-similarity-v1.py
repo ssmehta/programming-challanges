@@ -43,7 +43,7 @@ def string_similarity(s):
 if __name__ == '__main__':
     T = int(sys.stdin.readline())
     
-    for i in range(T):
+    for _ in range(T):
         s = sys.stdin.readline().strip()
         print(string_similarity(s))
         if i == 1: break
