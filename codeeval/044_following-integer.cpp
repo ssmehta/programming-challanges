@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-"""
+/*
 Following Integer
 
 Challenge Description:
@@ -16,38 +14,42 @@ Your program should accept as its first argument a path to a filename. Each line
 Output sample:
 
 For each line of input, generate a line of output which is the next integer in the list.
-"""
+*/
 
-import sys
+#include <algorithm>
+#include <cstdio>
+#include <vector>
+
+using namespace std;
 
 
-def next_lexographic(n):
-    # Find pivot index
-    idx = len(n) - 2
+int main(int argc, char *argv[]) {
+    FILE *fp = fopen(argv[1], "r");
+    vector<int> chars;
+    int n, zeros;
     
-    while idx > -1 and n[idx] >= n[idx + 1]:
-        idx -= 1
-    
-    
-    if idx > -1:
-        j = len(n) - 1
+    while(fscanf(fp, "%d\n", &n) != EOF) {
+        zeros = 0;
+        chars.clear();
         
-        while j > idx and n[idx] >= n[j]:
-            j -= 1
+        while(n > 0) {
+            chars.insert(chars.begin(), n % 10);
+            
+            if(n % 10 == 0)
+                zeros++;
+            n /= 10;
+        }
         
-        n[idx], n[j] = n[j], n[idx]
-        return n[: idx + 1] + sorted(n[idx + 1:])
+        if(!next_permutation(chars.begin(), chars.end())) {
+            chars.insert(chars.begin(), chars[zeros]);
+            chars[zeros + 1] = 0;
+        }
+        
+        for(vector<int>::iterator it = chars.begin(); it != chars.end(); ++it)
+            printf("%d", *it);
+        printf("\n");
+    }
     
-    else:
-        zeros = n.count(0) + 1
-        n = sorted(x for x in n if x != 0)
-        return [n[0]] + [0] * zeros + n[1:]
-        
-
-
-if __name__ == '__main__':
-    with open(sys.argv[1]) as f:
-        for line in f:
-            if line.strip():
-                n = int(line.strip())
-                print(int(''.join(str(i) for i in next_lexographic(n))))
+    fclose(fp);
+    return 0;
+}

@@ -29,9 +29,9 @@ def is_prime(n):
     
     if n < 2:
         return False
-    elif n == 2 or n == 3 or n == 5:
+    elif n == 2 or n == 3:
         return True
-    elif n % 2 == 0 or n % 3 == 0 or n % 5 == 0:
+    elif n % 2 == 0 or n % 3 == 0:
         return False
     
     i = 6

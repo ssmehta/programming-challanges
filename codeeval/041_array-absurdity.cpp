@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-"""
+/*
 Array Absurdity
 
 Challenge Description:
@@ -20,14 +18,28 @@ Print out the duplicated entry, each one on a new line eg
 
     0
     4
-"""
+*/
 
-import collections, sys
+#include <cstdio>
+
+using namespace std;
 
 
-if __name__ == '__main__':
-    with open(sys.argv[1]) as f:
-        for line in f:
-            if line.strip():
-                n = list(map(int, line.split(';')[1].split(',')))
-                print(sum(n) - (len(n) - 1) * (len(n) - 2) // 2)
+int main(int argc, char *argv[]) {
+    FILE *fp = fopen(argv[1], "r");
+    int N, n, sum;
+    
+    while(fscanf(fp, "%d;", &N) != EOF) {
+        sum = 0;
+        
+        for(int i = 0; i < N; i++) {
+            fscanf(fp, (i < N - 1) ? "%d," : "%d\n", &n);
+            sum += n;
+        }
+        
+        printf("%d\n", sum - (N - 1) * (N - 2) / 2);
+    }
+    
+    fclose(fp);
+    return 0;
+}
