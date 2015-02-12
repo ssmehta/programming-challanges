@@ -9,7 +9,6 @@ the 6th prime is 13.
 What is the 10001st prime number?
 """
 
-
 from euler import postponed_sieve
 
 

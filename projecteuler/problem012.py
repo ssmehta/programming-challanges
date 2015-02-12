@@ -25,7 +25,6 @@ have over five divisors.
 Which is the first triangle number to have over five-hundred divisors?
 """
 
-
 from euler import tau
 
 
