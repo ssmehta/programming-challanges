@@ -9,10 +9,10 @@ if __name__ == '__main__':
     for _ in range(T):
         N, C, M = [int(x) for x in sys.stdin.readline().split()]
         
-        n = k = N // C
+        total = wrappers = N // C
         
-        while k >= M:
-            n += k // M
-            k = (k % M) + (k // M)
+        while wrappers >= M:
+            total += wrappers // M
+            wrappers = (wrappers % M) + (wrappers // M)
         
-        print(n)
+        print(total)
