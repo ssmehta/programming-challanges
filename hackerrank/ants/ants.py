@@ -12,7 +12,7 @@ if __name__ == '__main__':
     N = int(sys.stdin.readline())
     V = sorted(map(int, sys.stdin.readline().split()))
 
-    x = 4 * TIME * (N // 2) * ((N % 2) + (N // 2)) // (LENGTH * STEPS)
+    x = TIME // (LENGTH * STEPS) * 4 * (N // 2) * (N // 2 + N % 2)
     i = 0
 
     while i < N:
