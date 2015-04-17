@@ -12,7 +12,7 @@ def matrix_mult(A, B):
 
 def matrix_exp(A, N):
     M = [[1, 0], [0, 1]]
-
+    
     if N == 0:
         return M
     elif N == 1:
@@ -20,14 +20,14 @@ def matrix_exp(A, N):
     else:
         P = matrix_exp(A, N // 2)
         P = matrix_mult(P, P)
-
+        
         if N % 2 == 1:
             P = matrix_mult(P, A)
-
+        
         return P
 
 def fibonacci(N):
-    return matrix_exp(FIB_MATRIX, gcd)[1][0]
+    return matrix_exp(FIB_MATRIX, N)[1][0]
 
 
 if __name__ == '__main__':
